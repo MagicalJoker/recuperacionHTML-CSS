@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio jmormez</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <header>
+    <h1>jmormez</h1>
+    <div class="barra-menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenido a mi portafolio</h2>
+    <p>bla bla bla</p>
+    <img src="lunin.png" alt="Imagen principal" class="imagen-principal" />
+    <br><br>
+    <button class="ver-proyectos">Ver mis proyectos</button>
+  </section>
+
+  <section id="proyectos">
+    <h2>Mis proyectos</h2>
+    <div class="contenedor-proyectos">
+      <div class="proyecto">
+        <img src="lunin.png" alt="Proyecto 1" class="imagen-proyecto1">
+        <p><strong>Proyecto 1</strong></p>
+        <p>bla bla bla</p>
+      </div>
+      <div class="proyecto">
+        <img src="lunin.png" alt="Proyecto 2" class="imagen-proyecto2">
+        <p><strong>Proyecto 2</strong></p>
+        <p>bla bla bla</p>
+      </div>
+      <div class="proyecto">
+        <img src="lunin.png" alt="Proyecto 3" class="imagen-proyecto3">
+        <p><strong>Proyecto 3</strong></p>
+        <p>bla bla bla</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="bloque-formulario">
+      <h2>Contacto</h2>
+      <div class="form-container">
+        <form action="https://www.tutorialesprogramacionya.com/htmlya/simulador/registrardatos.php" method="post">
+          <table>
+            <!-- Primera fila: títulos -->
+            <tr>
+              <td colspan="2">Nombre completo *</td>
+              <td colspan="2">Correo electrónico *</td>
+              
+            </tr>
+            <!-- Segunda fila: inputs de nombre y correo -->
+            <tr>
+              <td colspan="2"><input type="text" name="nombre" required></td>
+              <td colspan="2"><input type="email" name="correo" required></td>
+              
+            </tr>
+            <!-- Tercera fila: menú desplegable -->
+            <tr>
+              <td colspan="4">
+                <select name="motivo">
+                  <option value="">Motivo de consulta</option>
+                  <option value="consulta">Consulta</option>
+                  <option value="propuesta">Propuesta de trabajo</option>
+                </select>
+              </td>
+              
+            </tr>
+            <!-- Cuarta fila: parte izquierda (Mensaje) y botón de borrar a la derecha -->
+            <tr>
+              <td colspan="2" rowspan="2">
+                <label>Mensaje<br>
+                  <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </label>
+              </td>
+              <td colspan="2" class="botones">
+                <button type="reset">Borrar</button>
+              </td>
+              
+            </tr>
+            <!-- Quinta fila: botón de enviar debajo del botón de borrar -->
+            <tr>
+              <td colspan="2" class="botones">
+                <button type="submit">Enviar</button>
+              </td>
+              
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>©2025 Mi pesadilla</p>
+  </footer>
+</body>
+</html>
